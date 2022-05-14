@@ -50,6 +50,7 @@ class SearchResultValidation_PageObject(Util):
         try: 
             # If the empty results placeholder is available, return an empty list. 
             # Else, results are available
+            print("Searching for results for {}".format(query))
             WebDriverWait(self._driver, self.DEFAULT_WAIT_TIME_IN_SECONDS).until(EC.presence_of_all_elements_located(self.NO_RESULTS))
             print('No results found for query : {}'.format(query))
             return False
@@ -88,6 +89,7 @@ class SearchResultValidation_PageObject(Util):
             bool: true if navigation was done, false otherwise.
         """
         try:
+            print("Navigating to page {}".format(current_page + 1))
             element = self._driver.find_element(*self.NEXT_PAGE)
             self._driver.execute_script("arguments[0].scrollIntoView();", element)
             element.click()
