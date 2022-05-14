@@ -8,12 +8,12 @@ pip install -r requirements.txt
 2. Installing selenium drivers - Download the desired drivers and update the driver path in config.json
 
 ## Running
-Running on Firefox
+Searching for query "Security"
 ```
-python index.py firefox
+python index.py Security
 ```
 
-Running on Chrome and save results from 50 pages to chrome.json
+Running on Chrome and save results from 50 pages to chrome.json for query "test automation"
 ```
-python index.py 50 chrome chrome.json
+python index.py "testautomation" 50 chrome chrome.json
 ```
