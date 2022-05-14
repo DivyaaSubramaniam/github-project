@@ -10,10 +10,10 @@ pip install -r requirements.txt
 ## Running
 Running on Firefox
 ```
-python run.py firefox
+python index.py firefox
 ```
 
 Running on Chrome and save results from 50 pages to chrome.json
 ```
-python run.py 50 chrome chrome.json
+python index.py 50 chrome chrome.json
 ```
