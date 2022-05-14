@@ -1,0 +1,5 @@
+{
+    "driver": {
+        "firefox": "C:\\bin\\drivers\\geckodriver.exe"
+    }
+}
