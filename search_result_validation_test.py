@@ -1,7 +1,4 @@
-import json
-from selenium import webdriver
 from po import SearchResultValidation_PageObject
-from selenium.webdriver.support import expected_conditions as EC
 
 class SearchResultValidation(SearchResultValidation_PageObject): 
     def __init__(self, browser) -> None:
